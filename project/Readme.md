@@ -18,8 +18,8 @@ virtualenv --python=/usr/bin/python3<br> .
 source bin/activate<br>
 cd ..<br>
 cd flaskapp/project1<br>
-pip install flask
-pip install flask-sqlalchemy
-pip install flask-migrate
-pip install psycopg2
+pip install flask<br>
+pip install flask-sqlalchemy<br>
+pip install flask-migrate<br>
+pip install psycopg2<br>
 
