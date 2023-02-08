@@ -15,6 +15,7 @@ exit<br>
 mkdir -p flaskapp/project1<br>
 cd flaskapp<br>
 virtualenv --python=/usr/bin/python3<br> .
+source bin/activate<br>
 cd ..<br>
 cd flaskapp/project1<br>
 
