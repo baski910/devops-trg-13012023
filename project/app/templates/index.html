@@ -1,6 +1,16 @@
 <html>
   <body>
-    <h1>My First Web page</h1>
+    <h1>List of Books</h1>
+    <table>
+      <th>Title</th>
+      <th>Author</th>
+      {% for book in books %}
+      <tr>
+        <td>{{ book.booktitle }}</td>
+        <td>{{ book.bookauthor }}</td>
+      </tr>
+      (% endfor %}
+    </table>
     <form action="{{ url_for('addbook') }}" method="post">
       <p>Title:<input type="text" name="booktitle" /></p>
       <p>Author:<input type="text" name="bookauthor" /></p>
