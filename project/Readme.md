@@ -13,4 +13,8 @@ grant all privileges on database flaskdemodb to flaskdemouser<br>
 \q<br>
 exit<br>
 mkdir -p flaskapp/project1<br>
+cd flaskapp<br>
+virtualenv --python=/usr/bin/python3<br> .
+cd ..
 cd flaskapp/project1<br>
+
