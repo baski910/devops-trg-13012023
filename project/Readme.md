@@ -1,16 +1,16 @@
-sudo apt-get update
-sudo apt-get install virtualenv postgresql libpq-dev
-sudo nano /etc/postgresql/14/main/pg_hba.conf
-local all   postgres    trust
-local all   all         md5
-(save)
-sudo systemctl restart postgresql
-sudo su - postgres
-psql
-create database flaskdemodb
-create user flaskdemouser with encrypted password 'password'
-grant all privileges on database flaskdemodb to flaskdemouser
-\q
-exit
-mkdir -p flaskapp/project1
-cd flaskapp/project1
+sudo apt-get update<br>
+sudo apt-get install virtualenv postgresql libpq-dev<br>
+sudo nano /etc/postgresql/14/main/pg_hba.conf<br>
+local all   postgres    trust<br>
+local all   all         md5<br>
+(save)<br>
+sudo systemctl restart postgresql<br>
+sudo su - postgres<br>
+psql<br>
+create database flaskdemodb<br>
+create user flaskdemouser with encrypted password 'password'<br>
+grant all privileges on database flaskdemodb to flaskdemouser<br>
+\q<br>
+exit<br>
+mkdir -p flaskapp/project1<br>
+cd flaskapp/project1<br>
