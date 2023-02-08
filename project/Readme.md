@@ -23,3 +23,13 @@ pip install flask-sqlalchemy<br>
 pip install flask-migrate<br>
 pip install psycopg2<br>
 
+Copy the project directory to your local directory or cloud instance<br>
+Run the following command to create necessary tables<br>
+flask db init<br>
+flask db migrate<br>
+flask db upgrade<br>
+
+Run the following command to execute the applicaation<br>
+export FLASK_APP=run.py
+flask run --host 0.0.0.0
+
