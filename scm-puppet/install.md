@@ -53,10 +53,10 @@ From aws console allow traffic to the following ports for server ( edit inbound 
 agent node configuration<br>
 edit /etc/puppetlabs/puppet/puppet.conf<br>
 [main]<br>
-certname = agent-hostname 
-server = server-hostname
-environment = production
-runinterval = 1h
+certname = agent-hostname<br>
+server = server-hostname<br>
+environment = production<br>
+runinterval = 1h<br>
 <br>
 <br>
 sudo systemctl restart puppet-agent
