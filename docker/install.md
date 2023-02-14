@@ -17,4 +17,8 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 <br>
 sudo docker run hello-world<br>
 <br>
-sudo docker pull ubuntu
+sudo docker pull ubuntu<br>
+<br>
+sudo docker images<br>
+<br>
+sudo docker run -it ubuntu bash<br>
