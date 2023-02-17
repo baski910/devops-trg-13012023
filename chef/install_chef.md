@@ -1,8 +1,8 @@
-ec2 instance 4G - Server       - chefserver.example.com   
-ec2 instance 2G - Workstation  - chefworkstation.example.com 
-ec2 instance 1G - Node	       - chefnode1.example.com		
-
-
+ec2 instance 4G - Server       - chefserver.example.com<br> 
+ec2 instance 2G - Workstation  - chefworkstation.example.com<br> 
+ec2 instance 1G - Node	       - chefnode1.example.com<br> 		
+<br> 
+<br> 
 sudo apt-get update ( in each instance)<br>
 <br>
 Server
