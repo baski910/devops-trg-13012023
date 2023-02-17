@@ -1,6 +1,6 @@
-ec2 instance 4G - Server       - chefserver.example.com   -  18.233.158.184 	172.31.90.31
-ec2 instance 2G - Workstation  - chefworkstation.example.com - 54.234.101.246	172.31.21.211
-ec2 instance 1G - Node	       - chefnode1.example.com		54.162.252.223 	172.31.94.76
+ec2 instance 4G - Server       - chefserver.example.com   
+ec2 instance 2G - Workstation  - chefworkstation.example.com 
+ec2 instance 1G - Node	       - chefnode1.example.com		
 
 
 sudo apt-get update ( in each instance)<br>
@@ -22,14 +22,14 @@ FIRST_NAME="Chef"<br>
 LAST_NAME="Administrator"<br>
 EMAIL="chefadmin@example.com"<br>
 PASSWORD="Passw0rd"<br>
-KEY_PATH="/home/admin/chefadmin.pem"<br>
+KEY_PATH="/home/ubuntu/chefadmin.pem"<br>
 <br>
 sudo chef-server-ctl user-create ${USERNAME} ${FIRST_NAME} ${LAST_NAME} ${EMAIL} ${PASSWORD} -f ${KEY_PATH}<br>
 <br>
 <br>
 sudo chef-server-ctl user-list<br>
 <br>
-sudo chef-server-ctl org-create exampleorg 'example, Inc.' --association_user chefadmin --filename /home/admin/exampleorg-validator.pem<br>
+sudo chef-server-ctl org-create exampleorg 'example, Inc.' --association_user chefadmin --filename /home/ubuntu/exampleorg-validator.pem<br>
 <br>
 sudo chef-server-ctl org-list<br>
 <br>
@@ -37,8 +37,8 @@ sudo chef-server-ctl org-list<br>
 Workstation<br>
 <br>
 VERSION="22.1.745"<br>
-wget https://packages.chef.io/files/stable/chef-workstation/${VERSION}/debian/11/chef-workstation_${VERSION}-1_amd64.deb<br>
-#wget https://packages.chef.io/files/stable/chef-workstation/${VERSION}/ubuntu/20.04/chef-workstation_${VERSION}-1_amd64.deb<br>
+#wget https://packages.chef.io/files/stable/chef-workstation/${VERSION}/debian/11/chef-workstation_${VERSION}-1_amd64.deb<br>
+wget https://packages.chef.io/files/stable/chef-workstation/${VERSION}/ubuntu/20.04/chef-workstation_${VERSION}-1_amd64.deb<br>
 <br>
 <br>
 <br>
