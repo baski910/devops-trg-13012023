@@ -22,11 +22,11 @@ def create_app():
           title = request.form['booktitle']
           author = request.form['bookauthor']
           book = Book(booktitle=title,bookauthor=author)
-          db.session.add(customer)
+          db.session.add(book)
           db.session.commit()
             
-          return redirect(url_for('home'))
-       return redirect(url_for('home'))
+          return redirect(url_for('index'))
+       return redirect(url_for('index'))
 
   
   return app
